@@ -1,8 +1,10 @@
 package com.beimin.eveapi.model.corporation;
 
+import com.beimin.eveapi.model.ExpireObject;
+
 import java.util.Date;
 
-public class Member {
+public class Member extends ExpireObject{
     private long characterID;
     private String name;
     private Date startDateTime;

@@ -3,8 +3,9 @@ package com.beimin.eveapi.response;
 import java.util.Date;
 
 import com.beimin.eveapi.handler.ApiError;
+import com.beimin.eveapi.model.ExpireObject;
 
-public class ApiResponse {
+public class ApiResponse extends ExpireObject{
     private int version;
     private Date currentTime;
     private Date cachedUntil;

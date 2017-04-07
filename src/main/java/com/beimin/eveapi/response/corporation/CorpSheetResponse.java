@@ -11,6 +11,7 @@ public class CorpSheetResponse extends ApiResponse {
     private long corporationID;
     private String corporationName;
     private Long allianceID;
+    private String allianceName;
     private Long factionID;
     private String ticker;
     private long ceoID;
@@ -169,5 +170,13 @@ public class CorpSheetResponse extends ApiResponse {
 
     public Map<Integer, String> getWalletDivisions() {
         return walletDivisions;
+    }
+
+    public String getAllianceName() {
+        return allianceName;
+    }
+
+    public void setAllianceName(String allianceName) {
+        this.allianceName = allianceName;
     }
 }
