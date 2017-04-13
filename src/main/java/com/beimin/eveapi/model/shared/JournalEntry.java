@@ -1,8 +1,10 @@
 package com.beimin.eveapi.model.shared;
 
+import com.beimin.eveapi.model.BaseObject;
+
 import java.util.Date;
 
-public class JournalEntry implements Comparable<JournalEntry> {
+public class JournalEntry extends BaseObject implements Comparable<JournalEntry> {
     private Date date;
     private long refID;
     private int refTypeID;
@@ -20,6 +22,8 @@ public class JournalEntry implements Comparable<JournalEntry> {
     private Double taxAmount;
     private long owner1TypeID;
     private long owner2TypeID;
+
+    private long characterId;
 
     public Date getDate() {
         return date;
