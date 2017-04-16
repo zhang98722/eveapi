@@ -36,7 +36,6 @@ public class NotificationsParserTest extends FullAuthParserTest {
             if (notification.getNotificationID() == 295043380L) {
                 found = true;
                 assertEquals(5, notification.getTypeID());
-                assertEquals(NotificationType.ALLIANCE_WAR_DECLARED, notification.getType());
                 assertEquals(1000125L, notification.getSenderID());
                 assertDate(2010, 1, 14, 20, 45, 0, notification.getSentDate());
                 assertEquals(false, notification.isRead());
